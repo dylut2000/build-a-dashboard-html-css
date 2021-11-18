@@ -86,3 +86,291 @@ body {
     left: 60px;
     width: calc(100% - 60px);
   }
+
+  .main-content {
+    position: relative;
+    margin-left: 240px;
+    transition: margin-left 500ms;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 240px;
+    z-index: 100;
+    width: calc(100% - 240px);
+    background-color: #ffffff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ccc;
+    transition: 500ms;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-wrapper input {
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    height: 38px;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons span,
+  .social-icons div {
+    margin-left: 1.2rem;
+  }
+  
+  .social-icons div {
+    height: 38px;
+    width: 38px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/hardylutula.jpeg);
+    border-radius: 50%;
+  }
+
+
+main {
+    margin-top: 60px;
+    background-color: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem 3rem;
+  }
+  
+  .dash-title {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+  }
+  
+  .dash-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+  
+  .card-single {
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+  }
+  
+  .card-body h5 {
+    color: var(--text-gray);
+    font-size: 1rem;
+  }
+  
+  .card-body h4 {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+  
+  .card-footer {
+    padding: 0.2rem 1rem;
+    background: #f9fcfc;
+  }
+  
+  .card-footer a {
+    color: var(--main-color);
+  }
+  
+  .recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .activity-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column-gap: 1.5rem;
+  }
+  
+  .activity-card,
+  .summery-card,
+  .bday-card {
+    background-color: #ffffff;
+    border-radius: 7px;
+  }
+  
+  .activity-card h3 {
+    color: var(--text-gray);
+    margin: 1rem;
+  }
+  
+  .activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .activity-card thead {
+    background: #efefef;
+    text-align: left;
+  }
+  
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 1rem 1rem;
+    color: var(--color-dark);
+  }
+  
+  td {
+    font-size: 0.8rem;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f9fafc;
+  }
+  
+  .badge {
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  
+  .badge.success {
+    background: #def7ec;
+    color: var(--main-color);
+  }
+  
+  .badge.warning {
+    background: #f0f6b2;
+    color: orange;
+  }
+  
+  .td-team {
+    display: flex;
+    align-items: center;
+  }
+  
+  .img-1,
+  .img-2,
+  .img-3 {
+    height: 38px;
+    width: 38px;
+    border-radius: 38px;
+    margin-left: -15px;
+    border: solid 3px #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .img-1 {
+    background-image: url(img/hardylutula.jpeg);
+  }
+  .img-2 {
+    background-image: url(img/hardy2.jpeg);
+  }
+  
+  .summery-card {
+    margin-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .summery-single {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .summery-single span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1rem;
+  }
+  
+  .summery-single h5 {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin-bottom: 0rem !important;
+  }
+  
+  .summery-single small {
+    font-weight: 700;
+    color: var(--text-gray);
+  }
+  
+  .bday-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+  }
+  
+  .bday-card {
+    padding: 1rem;
+  }
+  
+  .bday-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: solid 3px #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/hardylutula.jpeg);
+    margin-left: 0.7rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-center button {
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: solid 1px var(--main-color);
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .sidebar {
+      width: 60px;
+    }
+  
+    .sidebar .sidebar-header h3 span,
+    .sidebar li span:last-child {
+      display: none;
+    }
+  
+    .sidebar .sidebar-header,
+   .sidebar li {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .main-content {
+      margin-left: 60px;
+    }
+  
+    .main-content header {
+      left: 60px;
+    }
+  
+  }
+  
