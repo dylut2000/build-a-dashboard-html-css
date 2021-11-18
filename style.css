@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --main-color: #075ac1;
+  --color-dark: #1d2231;
+  --text-gray: #8390a2;
+  --body-bg: #f1f5f9;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  var(--body-bg);
+  font-family: 'Roboto', sans-serif;
+}
+
+#sidebar-toggle {
+    display: none;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--main-color);
+    color: #ffffff;
+    overflow-y: auto;
+    transition: width 500ms;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1rem;
+  }
+  
+  .sidebar-menu {
+    padding: 1rem;
+  }
+  
+  .sidebar li {
+    margin-bottom: 1.2rem;
+  }
+  
+  .sidebar a {
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar a span:last-child {
+    padding-left: 0.6rem;
+  }
+  
+  #sidebar-toggle:checked ~ .sidebar {
+    width: 60px;
+  }
+  
+  #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+  #sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: none;
+  }
+  
+  #sidebar-toggle:checked ~ .sidebar .sidebar-header,
+  #sidebar-toggle:checked ~ .sidebar li {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #sidebar-toggle:checked ~ .main-content {
+    margin-left: 60px;
+  }
+  
+  #sidebar-toggle:checked ~ .main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
+  }
