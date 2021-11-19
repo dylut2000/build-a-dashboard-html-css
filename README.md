@@ -6,4 +6,8 @@ Build Dashboard using Html and Css only
 
 ![alt text](./img/dashboard-2.png)
 
-We are going to use few external
+by:
+
+[Dylut2000 Twitter](https://twitter.com/dylut2000)
+
+[Dylut2000 Github](https://github.com/dylut2000)
